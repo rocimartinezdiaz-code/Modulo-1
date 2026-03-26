@@ -1,0 +1,168 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Rocio}{Martinez}{Estudiante}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{image.png}
+\end{center}
+
+\bg{cvgreen}{white}{Sobre mi}\\[0.5em]
+
+{\footnotesize
+Estudiante de Ingeneria industrial, con especial interes en agropecuaria y energias renovables.Soy una persona social y decidida y orientada a obtener resultados. }
+\bigskip
+
+\bg{cvgreen}{white}{personal} \\[0.5em]
+Rocio Martinez
+
+Nacionalidad: Argentina
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Area de especealizacion} \\[0.5em]
+
+Ingeneria ~•~ Energias ~•~ Matematicas ~•~ 
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+Deportes, andar en caballo y cocina
+\bigskip
+
+
+\vspace{4em}
+
+\infobubble{\faAt}{cvgreen}{white}{rocio@smartinez.org}
+\infobubble{\faTwitter}{cvgreen}{white}{@rocio}
+\infobubble{\fawhassap}{cvgreen}{white}{2615989777}
+\infobubble{\faGithub}{cvgreen}{white}{rocimartinezdiaz-code}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Rocio Martinez}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2018--2021}{Secretario odontological}{Ubicacion}{Mendoza \color{cvred}}{Durante un año me desempeñé como secretaria en el consultorio odontológico de mi padre. Fue una etapa de mucha responsabilidad porque yo era la encargada de que la clínica funcionara operativamente todas las tardes, de 5 a 9 de la noche, manejando desde la recepción hasta la parte administrativa. Esto me dio una base muy sólida en organización y atención al detalle.}{secretaria.png} \\
+    \cvevent{2016--2017}{Liceo Militar l}{Ubicacion}{Liceo Militar \color{cvred}}{Designada como Monitora de Instrucción para alumnos subalternos en mi ultimo año de secundaria, reconocimiento otorgado exclusivamente a los promedios más altos de la promoción del colegio Liceo Militar}{escuela.jpg}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Grados}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2023}{Subteniente de reserva}{Certificado}{Liceo militar \color{headerblue}}{}{escuela.jpg} \\
+    \cvdegree{2023}{Ingles}{certificado }{Amicana \color{headerblue}}{}{ingles.jpg} \\
+    
+\end{tabular}
+\end{minipage}\hfill
+
+
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+
+\bigskip
+
+\section*{Idiomas}
+\begin{tabular}{l | ll}
+\textbf{Español} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+\textbf{Aleman} & A2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\textbf{Inglesl} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+\textbf{Italiano} & A1 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+
+\bigskip
+
+
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Rocio Martinez \icon{\faEnvelopeO}{cvgreen}{} Mnd Capital \icon{\faMapMarker}{cvgreen}{} Barrio Bombal \icon{\faPhone}{cvgreen}{} 261/5989777 \newline\icon{\faAt}{cvgreen}{} \protect\url{rociomartinezdiaz@sgmail.com}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
